@@ -1,68 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angkhun</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        img {
-        border-radius: 50%;
-    }
-    </style>
-    
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ระบบข้อสอบอย่างง่าย Simple Quiz</title>
+   <link rel="stylesheet" href="styles.css">
+  
 </head>
-<body style= "background-color: #EDF6F9">
-    <center>
-    <img src = "11.png" alt="flower" width="300" height="300">
-    <h1 style= "background-color: #58A399" >Angkhun Kongha </h1> 
-    <h3>สาขาวิชาเทคโนโลยีการศึกษาและคอมพิวเตอร์ศึกษา
-    <br>ครุศาสตร์
-    มาหาวิทยาลัยราชภัฏมหาสารคาม
-    </h3>
-
-   <a href = "http://183.89.213.168/2024/"> ไปยังเว็บไซต์ของหน่วยงาน </a>
-   <br>
-   <a href = "contact.html"> contact </a>
+<body onload="begin()">
+   <div class="quiz-container">
+       <div id="P01">
+            <h1></h1>
+            <p id="question"> PIM ย่อมาจากอะไร ?</p>
+            <button class="button" onclick="checkAnswer01('a')">A) พีไอเอ็ม</button>
+            <button class="button" onclick="checkAnswer01('b')">B) ปิ๋ม</button>
+            <button class="button" onclick="checkAnswe01('c')">C) พิม</button>
+            <button class="button" onclick="checkAnswer01('d')">D) ภีม</button>
+            <p id="result"></p>
+            <p id="controls">
+                
+                <button class="buttonControl"  onclick="Next()">ถัดไป</button>
+            </p>
+       </div>
+       <div id="P02" >
+            <h1></h1>
+            <p id="question">วิทยาลัยอาชีวศึกษากาฬสินธุ์ ตั้งอยู่ภูมิภาคอะไร ในประเทศไทย ?</p>
+            <button class="button" onclick="checkAnswer('a')">A) กลาง</button>
+            <button class="button" onclick="checkAnswer('b')">B) เหนือ</button>
+            <button class="button" onclick="checkAnswer('c')">C) ใต้</button>
+            <button class="button" onclick="checkAnswer('d')">D) ตะวันออกเฉียงเหนือ</button>
+            <p id="result2"></p>
+            <p id="controls">
+                <button class="buttonControl" onclick="Prev()">ย้อนกลับ</button>
+                <button class="buttonControl" onclick="summary()">สรุปผล</button>
+             </p>
+       </div>
+       <div id="P03" >
+        <h1></h1>
+        <h3>สรุปผล</h3>
+        <h4 id="result3"></h4>
+        <p id="controls">
+            <button class="buttonControl"  onclick="reset()">เริ่มใหม่</button>
+            <button class="buttonControl"  onclick="Prev02()">ย้อนกลับ</button>
+            <button class="buttonControl"  onclick="summary()">สรุปผล</button>
+         </p>
+   </div>
+       
+   </div>
    
-    <hr>
-        <hr style="border-style: inset;">
-    <hr>
-   
-   <h3>ประสบการณ์ทำงาน</h3>
-   <!--
-   <ul>
-    <li>2020 - 2021 โรงเรียนยางตลาดวิทยาคาร</li>
-    <li>2021 - 2022 โรงเรียนเอกปัญญา</li>
-    <li>2022 - 2024 วิทยาลัยอาชีวศึกษากาฬสินธุ์ </li>
-</ul>
--->
-<table>
-    <thead>
-        <tr>
-            <th>
-            Year
-            </th>
-             <th>
-            Work Place
-            </th>
-        </tr>
-    </thead>
-    
-    <tr>
-        <td style= "background-color: #A8CD9F" > 2020 - 2021</td>
-         <td style= "background-color: #A8CD9F" >โรงเรียนยางตลาดวิทยาคาร</td>
-    </tr>
-     <tr>
-         <td>2021 - 2022</td>
-         <td>โรงเรียนเอกปัญญา</td>
-    </tr>
-    <tr>
-        <td style= "background-color: #A8CD9F" >2022 - 2024</td>
-        <td style= "background-color: #A8CD9F" > วิทยาลัยอาชีวศึกษากาฬสินธุ์</td>
-   </tr>
-</table>
+</div>
 
+   <script src="index.js"></script>
 </body>
-</center>
 </html>

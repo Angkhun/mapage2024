@@ -1,51 +1,50 @@
-table {
-    border-collapse: collapse;
-    border: 2px solid rgb(140 140 140);
-    font-family: sans-serif;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-  }
-   caption {
-    caption-side: bottom;
-    padding: 10px;
-    font-weight: bold;
-  }
-   thead,
-  tfoot {
-    background-color: rgb(228 240 245);
-  }
-   th,
-  td {
-    border: 1px solid rgb(160 160 160);
-    padding: 8px 10px;
-  }
-   td:last-of-type {
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+ }
+ 
+ .quiz-container {
     text-align: center;
-  }
-   tbody > tr:nth-of-type(even) {
-    background-color: rgb(237 238 242);
-  }
-   tfoot th {
-    text-align: right;
-  }
-   tfoot td {
-    font-weight: bold;
-  }
-  h1 {
-    position: relative;
-    background: #dfefff;
-    box-shadow: 0px 0px 0px 5px #dfefff;
-    border: dashed 2px #fff;
-    padding: 0.2em 0.5em;
-    
-    }
-    h1 :after {
-    position: absolute;
-    content: '';
-    left: -7px;
-    top: -7px;
-    border-width: 0 0 15px 15px;
-    border-style: solid;
-    border-color: #fff #fff #a8d4ff;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
-    }
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+ }
+ 
+ .button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+ }
+ 
+ .button:hover {
+    background-color: #0056b3;
+ }
+
+ .buttonControl {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f8a008;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+ }
+
+ .buttonControl:hover {
+    background-color: #ef5502;
+ }
+ 
